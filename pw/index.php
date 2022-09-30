@@ -14,7 +14,7 @@ $books = query("SELECT * FROM buku");
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles/styleIndex.css">
-  <title>BookShelf</title>
+  <title>My BookShelf</title>
   <style>
     .leftImportant {
       text-align: left !important;
