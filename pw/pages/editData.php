@@ -1,6 +1,6 @@
 <?php
 
-require 'functions.php';
+require '../config/functions.php';
 
 $id = $_GET['id'];
 $buku = query("SELECT * FROM buku WHERE idBuku = $id")[0];

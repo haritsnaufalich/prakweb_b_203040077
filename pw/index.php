@@ -24,7 +24,7 @@ $books = query("SELECT * FROM buku");
 <body>
   <div class="container mx-auto my-5">
     <div class="flex justify-center">
-      <a href="config/addData.php" class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded" target="_blank">Tambah Data</a>
+      <a href="pages/addData.php" class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded" target="_blank">Tambah Data</a>
     </div>
     <table class="table-auto mx-auto mt-5 text-center border-collapse">
       <thead class="bg-blue-200">
@@ -68,8 +68,8 @@ $books = query("SELECT * FROM buku");
               <td class="border border-slate-800 px-4 py-2 text-green-500">100%</td>
             <?php endif; ?>
             <td class="border border-slate-800 px-4 py-2">
-              <a href="config/editData.php?id=<?= $book['idBuku']; ?>" class="bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded">Ubah</a>
-              <a href="config/deleteData.php?id=<?= $book['idBuku']; ?>" class="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded" onclick="return confirm('Yakin?');">Hapus</a>
+              <a href="pages/editData.php?id=<?= $book['idBuku']; ?>" class="bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded">Ubah</a>
+              <a href="pages/deleteData.php?id=<?= $book['idBuku']; ?>" class="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded" onclick="return confirm('Yakin?');">Hapus</a>
             </td>
           </tr>
           <?php $i++; ?>

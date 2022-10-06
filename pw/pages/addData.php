@@ -1,6 +1,6 @@
 <?php
 
-require 'functions.php';
+require '../config/functions.php';
 
 if (isset($_POST['submit'])) {
   if (addData($_POST) > 0) {
